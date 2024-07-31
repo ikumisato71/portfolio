@@ -136,13 +136,10 @@ img {
  メインビジュアル
 ---------------------------------*/
 .mv {
-  display: flex;
   align-items: center;
   justify-content: center;
   height: auto;
-  text-align: center;
 }
-
 .mv-container {
   position: relative;
   padding: 0 20px;
@@ -153,6 +150,11 @@ img {
   height: auto;
 }
 
+.mv-title {
+  font-family: "Aboreto", system-ui;
+  font-size: 48px;
+  margin: 30px 0px 100px 20px;
+}
 /*--------------------------------
  Works
 ---------------------------------*/
