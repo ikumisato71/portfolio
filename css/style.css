@@ -245,7 +245,7 @@ img {
   gap: 20px;
 }
 .profile-img {
-  margin: 40px;
+  margin: 70px;
   width: 70%;
 }
 .profile-img--orange {
@@ -265,7 +265,7 @@ img {
 }
 
 .profile-body p {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.8;
 }
 
