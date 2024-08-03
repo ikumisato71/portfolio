@@ -154,6 +154,7 @@ img {
 }
 .mv-container img {
   margin-right: 40px;
+  /* gap: 40px; 効かない*/
 }
 
 .s-logo {
