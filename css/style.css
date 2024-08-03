@@ -84,7 +84,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px 40px 5px 40px;
 }
 
 .header-logo img {
@@ -142,19 +142,25 @@ img {
 }
 .mv-container {
   position: relative;
-  padding: 0 20px;
+  padding: 40px;
 }
-
 .mv-container img {
-  width: 100%;
-  height: auto;
+  margin-right: 40px;
 }
 
-.mv-title {
-  font-family: "Aboreto", system-ui;
-  font-size: 48px;
-  margin: 30px 0px 100px 20px;
+.s-logo {
+  width: 25%;
 }
+.a-logo {
+  width: 5%;
+}
+.t-logo {
+  width: 15%;
+}
+.o-logo {
+  width: 30%;
+}
+
 /*--------------------------------
  Works
 ---------------------------------*/
