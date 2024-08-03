@@ -143,6 +143,14 @@ img {
 .mv-container {
   position: relative;
   padding: 40px;
+  /* just for demo purposes... */
+  /* background: linear-gradient(180deg, #040f11 0%, #162b30 100%); */
+  background-color: var(--bg-color);
+}
+:root {
+  /* these are used in JS as well! */
+  --bg-color: rgba(236, 241, 241, 0.25);
+  --ripple-color: #bfdddd;
 }
 .mv-container img {
   margin-right: 40px;
@@ -150,6 +158,21 @@ img {
 
 .s-logo {
   width: 25%;
+}
+
+.text_blink {
+  animation: animation_text_blink 3s linear 1s infinite normal both;
+}
+@keyframes animation_text_blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .a-logo {
   width: 5%;
