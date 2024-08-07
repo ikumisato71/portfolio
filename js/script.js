@@ -32,3 +32,46 @@ button.addEventListener("mousemove", (e) => {
 button.addEventListener("mouseleave", (event) => {
   button.style.removeProperty("background");
 });
+
+// リップルを追加
+$(document).ready(function () {
+  try {
+    $(".o-logo").ripples({
+      resolution: 512,
+      dropRadius: 20, //px
+      perturbance: 0.04,
+    });
+    $("main.o-logo").ripples({
+      resolution: 128,
+      dropRadius: 10, //px
+      perturbance: 0.04,
+      interactive: false,
+    });
+  } catch (e) {
+    $(".error").show().text(e);
+  }
+
+  $(".js-ripples-disable").on("click", function () {
+    $(".o-logo").ripples("destroy");
+    $(this).hide();
+  });
+
+  $(".js-ripples-play").on("click", function () {
+    $(".o-logo").ripples("play");
+  });
+
+  $(".js-ripples-pause").on("click", function () {
+    $(".o-logo").ripples("pause");
+  });
+
+  // Automatic drops
+  setInterval(function () {
+    var $el = $(".o-logo");
+    var x = Math.random() * $el.outerWidth();
+    var y = Math.random() * $el.outerHeight();
+    var dropRadius = 20;
+    var strength = 0.04 + Math.random() * 0.04;
+
+    $el.ripples("drop", x, y, dropRadius, strength);
+  }, 400);
+});

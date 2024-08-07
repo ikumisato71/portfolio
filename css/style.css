@@ -48,7 +48,7 @@ img {
 }
 
 /*--------------------------------
- 見出し
+見出し
 ---------------------------------*/
 .title {
   /* font-family: "Noto Serif JP", sans-serif; */
@@ -136,9 +136,9 @@ img {
  メインビジュアル
 ---------------------------------*/
 .mv {
-  align-items: center;
   justify-content: center;
   height: auto;
+  text-align: center;
 }
 .mv-container {
   position: relative;
@@ -183,6 +183,12 @@ img {
 }
 .o-logo {
   width: 30%;
+}
+.o-logo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 
 /*--------------------------------
