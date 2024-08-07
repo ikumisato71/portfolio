@@ -183,6 +183,11 @@ img {
 }
 .o-logo {
   width: 30%;
+  background-image: url("img/ologo.png");
+  background-size: cover;
+  background-position: 50% 0;
+  height: 100%;
+  text-align: center;
 }
 .o-logo:before {
   content: "";

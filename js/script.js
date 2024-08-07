@@ -41,7 +41,7 @@ $(document).ready(function () {
       dropRadius: 20, //px
       perturbance: 0.04,
     });
-    $("main.o-logo").ripples({
+    $(".o-logo").ripples({
       resolution: 128,
       dropRadius: 10, //px
       perturbance: 0.04,
