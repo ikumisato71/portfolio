@@ -183,16 +183,15 @@ img {
 }
 .o-logo {
   display: inline-block;
-  width: 30%;
   background-image: url(../img/ologo.png);
   background-size: cover;
   background-position: 50% 0;
-  height: 100%;
+  width: 350px;
+  height: 400px;
   text-align: center;
 }
 .o-logo:before {
   content: "";
-  display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
