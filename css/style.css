@@ -84,7 +84,13 @@ img {
   justify-content: space-between;
   padding: 20px 40px 5px 40px;
 }
-
+.header .container-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #888;
+  padding: 20px 40px 5px 40px;
+}
 .header-logo img {
   width: 30%;
 }
@@ -143,16 +149,15 @@ img {
 .mv-container img {
   width: 100%;
 }
-.o-logo {
+.mv-photo {
   display: inline-block;
   background-image: url(../img/por.gif);
   background-size: cover;
-  /* background-position: 50% 0; */
   width: 100%;
   height: 700px;
   text-align: center;
 }
-.o-logo:before {
+.mv-photo:before {
   content: "";
   vertical-align: middle;
   height: 100%;
@@ -298,7 +303,7 @@ img {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #4c4c4c;
+  background-color: #c2dbd8;
 }
 
 .page-top .material-icons-outlined {
@@ -311,13 +316,13 @@ img {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #333;
+  background-color: #888;
 }
 
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #797979;
+  color: #fff;
 }
 
 /*--------------------------------
@@ -427,7 +432,6 @@ img {
   }
 
   .header-logo {
-    font-size: 15px;
     margin-right: 15px;
   }
 
@@ -465,7 +469,13 @@ img {
     font-size: 14px;
     line-height: 1.7;
   }
-
+  /* ------------
+  できないところ
+  ------------ */
+  .mv-photo {
+    width: 70%;
+    margin: 0 auto;
+  }
   /* Works */
   .works-name {
     font-size: 12px;

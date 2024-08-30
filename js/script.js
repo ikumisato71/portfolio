@@ -36,12 +36,12 @@ button.addEventListener("mouseleave", (event) => {
 // リップルを追加
 $(document).ready(function () {
   try {
-    $(".o-logo").ripples({
+    $(".mv-photo").ripples({
       resolution: 512,
       dropRadius: 20, //px
       perturbance: 0.04,
     });
-    $(".o-logo").ripples({
+    $(".mv-photo").ripples({
       resolution: 128,
       dropRadius: 10, //px
       perturbance: 0.04,
@@ -52,21 +52,21 @@ $(document).ready(function () {
   }
 
   $(".js-ripples-disable").on("click", function () {
-    $(".o-logo").ripples("destroy");
+    $(".mv-photo").ripples("destroy");
     $(this).hide();
   });
 
   $(".js-ripples-play").on("click", function () {
-    $(".o-logo").ripples("play");
+    $(".mv-photo").ripples("play");
   });
 
   $(".js-ripples-pause").on("click", function () {
-    $(".o-logo").ripples("pause");
+    $(".mv-photo").ripples("pause");
   });
 
   // Automatic drops
   setInterval(function () {
-    var $el = $(".o-logo");
+    var $el = $(".mv-photo");
     var x = Math.random() * $el.outerWidth();
     var y = Math.random() * $el.outerHeight();
     var dropRadius = 20;
