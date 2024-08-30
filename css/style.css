@@ -8,7 +8,6 @@ body {
 a {
   transition: opacity 0.3s;
   text-decoration: none;
-  color: #1ca9e3;
 }
 
 img {
@@ -303,7 +302,7 @@ img {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #c2dbd8;
+  background-color: #86a9c2d1;
 }
 
 .page-top .material-icons-outlined {
@@ -421,9 +420,9 @@ img {
   .section {
     padding: 60px 0;
   }
-
+  /* 不具合 */
   .container {
-    padding: 0 20px;
+    margin-top: 50px;
   }
 
   /* ヘッダー */
@@ -453,28 +452,27 @@ img {
   }
 
   .mv-container {
-    padding: 0 20px;
+    width: 100%;
+    margin: 0;
   }
 
-  .mv-title {
+  /* .mv-title {
     font-size: 30px;
   }
   .mv-subtitle {
     font-size: 16px;
     margin-bottom: 20px;
-  }
+  } */
 
-  .mv-text {
-    top: 75%;
+  /* .mv-text {
     font-size: 14px;
     line-height: 1.7;
-  }
-  /* ------------
-  できないところ
-  ------------ */
+  } */
+
   .mv-photo {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
+    background-position: center;
   }
   /* Works */
   .works-name {
@@ -523,10 +521,25 @@ img {
   .profile {
     display: block;
   }
+  .profile__inner {
+    width: 100%;
+    display: block;
+    /* margin: auto; */
+    margin: 0 auto;
+  }
+
   .profile-img {
     width: 150px;
     margin: 0 auto;
     margin-bottom: 25px;
+  }
+  .profile-img--red {
+    margin: 50px auto;
+    width: 50%;
+  }
+  .profile-img--orange {
+    margin: 50px;
+    width: 50%;
   }
 
   .profile-body p {

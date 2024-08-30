@@ -75,3 +75,19 @@ $(document).ready(function () {
     $el.ripples("drop", x, y, dropRadius, strength);
   }, 400);
 });
+
+// 背景の色をスクロール時かえる
+const backColor = document.querySelector(".header");
+
+// 画面がスクロールされた時に背景の色をかえるイベント処理を実行
+window.addEventListener("scroll", () => {
+  //　画面のスクロール値をpxで取得する
+  const scrollValue = document.scrollingElement.scrollTop;
+  // 画面のスクロール量が700px以上であれば、『TOPに戻る』ボタンを表示
+  if (scrollValue >= 700) {
+    console.log(scrollValue);
+    backColor.style.backgroundColor = "#86a9c2d1";
+  } else {
+    backColor.style.backgroundColor = "transparent";
+  }
+});
