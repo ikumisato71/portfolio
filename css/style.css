@@ -59,6 +59,7 @@ img {
   text-align: center;
   letter-spacing: 0.05em;
   color: #333;
+  margin-top: 50px;
 }
 
 .lead {
@@ -421,13 +422,14 @@ img {
     padding: 60px 0;
   }
   /* 不具合 */
-  .container {
+  /* .container {
     margin-top: 50px;
-  }
+  } */
 
   /* ヘッダー */
   .header .container {
     padding: 15px;
+    margin: 0 auto;
   }
 
   .header-logo {
