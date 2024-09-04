@@ -12,9 +12,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
-  border-style: none;
 }
 
 .pc-only {
@@ -28,16 +25,9 @@ img {
 /*--------------------------------
  レイアウト
 ---------------------------------*/
-.wrapper {
-  /* padding-top: 73px; */
-}
 
 .section {
-  padding: 100px 0;
-}
-
-.section:nth-of-type(odd) {
-  /* background-color: #f7f7f7; */
+  margin-top: 100px;
 }
 
 .container {
@@ -50,7 +40,6 @@ img {
 見出し
 ---------------------------------*/
 .title {
-  /* font-family: "Noto Serif JP", sans-serif; */
   font-family: "Aboreto", system-ui;
   font-size: 34px;
   font-weight: bold;
@@ -82,7 +71,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px 5px 40px;
 }
 .header .container-sb {
   display: flex;
@@ -166,6 +154,9 @@ img {
 /*--------------------------------
  Works
 ---------------------------------*/
+.works section {
+  margin-top: 500px;
+}
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -265,7 +256,7 @@ img {
   width: 50%;
 }
 .profile-img--child {
-  margin: 40px;
+  margin: 40px auto;
   width: 50%;
 }
 .profile-body {
@@ -294,6 +285,9 @@ img {
 
 .contact-text {
   margin-top: 10px;
+}
+.contact-list img {
+  width: 5%;
 }
 /*--------------------------------
  ページトップ
@@ -413,23 +407,16 @@ img {
     margin-bottom: 20px;
   }
 
-  /* レイアウト */
-  .wrapper {
-    padding-top: 57px;
-  }
-
-  .section {
-    padding: 60px 0;
-  }
-  /* 不具合 */
-  /* .container {
-    margin-top: 50px;
+  /* .section {
+    padding: 100px 0;
   } */
+  #works {
+    margin-top: 150px;
+  }
 
   /* ヘッダー */
   .header .container {
     padding: 15px;
-    margin: 0 auto;
   }
 
   .header-logo {
@@ -458,25 +445,15 @@ img {
     margin: 0;
   }
 
-  /* .mv-title {
-    font-size: 30px;
-  }
-  .mv-subtitle {
-    font-size: 16px;
-    margin-bottom: 20px;
-  } */
-
-  /* .mv-text {
-    font-size: 14px;
-    line-height: 1.7;
-  } */
-
   .mv-photo {
     width: 100%;
     margin: 0 auto;
     background-position: center;
   }
   /* Works */
+  .works section {
+    margin-top: 50px;
+  }
   .works-name {
     font-size: 12px;
   }
@@ -525,11 +502,11 @@ img {
   }
   .profile__inner {
     width: 100%;
-    display: block;
-    /* margin: auto; */
     margin: 0 auto;
   }
-
+  .profile__inner img {
+    margin: 50px auto;
+  }
   .profile-img {
     width: 150px;
     margin: 0 auto;
@@ -537,10 +514,10 @@ img {
   }
   .profile-img--red {
     margin: 50px auto;
-    width: 50%;
+    transform: translateX(8%);
   }
   .profile-img--orange {
-    margin: 50px;
+    margin: 50px auto;
     width: 50%;
   }
 
