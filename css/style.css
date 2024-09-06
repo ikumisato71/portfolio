@@ -65,6 +65,7 @@ img {
   top: 0;
   z-index: 1;
   width: 100%;
+  padding: 15px;
 }
 
 .header .container {
@@ -138,8 +139,8 @@ img {
   width: 100%;
 }
 .mv-photo {
-  display: inline-block;
-  background-image: url(../img/por.gif);
+  /* display: inline-block; */
+  background-image: url(../img/por.jpg);
   background-size: cover;
   width: 100%;
   height: 700px;
@@ -411,9 +412,9 @@ img {
   /* .section {
     padding: 100px 0;
   } */
-  #works {
-    margin-top: 150px;
-  }
+  /* #works {
+    margin-top: 500px;
+  } */
 
   /* ヘッダー */
   .header .container {
@@ -515,7 +516,7 @@ img {
   }
   .profile-img--red {
     margin: 50px auto;
-    transform: translateX(8%);
+    /* transform: translateX(8%); */
   }
   .profile-img--orange {
     margin: 50px auto;
