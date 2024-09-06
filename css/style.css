@@ -65,6 +65,7 @@ img {
   top: 0;
   z-index: 1;
   width: 100%;
+  padding: 15px;
 }
 
 .header .container {
